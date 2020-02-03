@@ -1,7 +1,7 @@
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
 ## Description
-This app is a progressive web app that works as a Hearthstone card explorer.
+This app is a web app that works as a Hearthstone card explorer.
 <!-- ☝️ replace this description with a description of your own work -->
 
 <!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
@@ -41,4 +41,4 @@ To do:
 
 <!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
 ## License
-Mit
+license @ [MIT](https://opensource.org/licenses/MIT)
