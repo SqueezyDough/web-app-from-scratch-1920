@@ -32,7 +32,7 @@ Nice to haves
 <!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
 Done:
 * Search for an API.
-* Load data inn the console.
+* Load data in the console.
 
 To do:
 * Finish readme.
