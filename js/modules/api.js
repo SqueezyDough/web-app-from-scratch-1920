@@ -1,3 +1,6 @@
+import { renderTemplate } from './render.js'
+import dataHelper from './dataHelper.js'
+
 // source: https://codeburst.io/fetch-api-was-bringing-darkness-to-my-codebase-so-i-did-something-to-illuminate-it-7f2d8826e939
 const checkStatus = response => {
     if (response.ok) {
@@ -19,6 +22,8 @@ async function FetchData(url, cardName) {
     })
     .then(checkStatus)
     .then(res => res.json())
+    .then(data => dataHelper.cleanData(data))
+    .then(data => renderTemplate(data))
 }
 
 export { FetchData };

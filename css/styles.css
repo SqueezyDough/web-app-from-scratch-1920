@@ -1,9 +1,44 @@
 :root {
-  --dark: #000;
-  --light: #fff;
+  --background: #21201D;
+  --yellow: #D1A45B;
+
+  --mainFontFamily: 'Roboto-bold', sans-serif;
 }
+
+@font-face {
+  font-family: "Roboto-bold";
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+
 body {
-  font-size: 1.5em;
-  line-height: 1.5;
   margin: 0;
+  background-color: var(--background);
+}
+
+h1, h2, h3, h4 {
+  color: var(--yellow);
+  font-family: var(--mainFontFamily);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.wrapper {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.collection-overview__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.collection-overview__card__class-name {
+  grid-column: 1 / 5;
+  font-size: 1.5rem;
+}
+
+.collection-overview__card__img {
+  width: 15rem;
 }
