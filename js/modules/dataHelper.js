@@ -19,6 +19,7 @@ function sortSet(data) {
 
 // gets the evergreen set from the dataset
 function getEverGreenSet(data) {
+    // return data['Basic'].concat(data['Classic'])
     return data['Basic'].concat(data['Classic'])
 }
 

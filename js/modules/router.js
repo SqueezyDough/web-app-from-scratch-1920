@@ -1,4 +1,9 @@
 import { FetchData } from './api.js';
+import { renderTemplate } from './render.js'
+import * as overviewTemplate from './templates/collection.js'
+import * as detailsTemplate from './templates/details.js'
+import dataHelper from './dataHelper.js'
+
 // import { loader } from './loader.js';
 
 function handleRoutes() {
@@ -6,9 +11,13 @@ function handleRoutes() {
 
     routie({
         '/':
-            FetchData(url),
-        ':name': (cardName) => {
-            FetchData(url, cardName)
+            FetchData(url)
+                .then(data => dataHelper.cleanData(data))
+                .then(data => renderTemplate(overviewTemplate.layout, data)),
+
+        ':id': (url, id) => {
+            FetchData(url, id)
+                .then(data => renderTemplate(detailsTemplate.layout, data, id))
         }
     });
 }

@@ -13,108 +13,18 @@
 <body>
   <div class="wrapper">
     <header>
-      <h1>Hearthstone explorer</h1>
+      <h1>Hearthstone <span>Evergreen</span></h1>
     </header>
 
-    <!-- container to append template -->
-    <div class="collection-overview"></div>
+    
+    <section class="collection-overview">
+      <!-- content is rendered through JS -->
+    </section>
+
+    <section class="details-overview is-hidden">
+      <!-- content is rendered through JS -->
+  </section>
   </div>
-
-  <script type="text/template" id="collectionTemplate">
-    {{#Set}}
-
-      {{#Druid}}
-        <article class="collection-overview__card">
-          <h2 class="collection-overview__card__class-name">{{ClassName}}</h2>
-          {{#Collection}}
-            <img class="collection-overview__card__img" src="{{img}}" alt="{{name}}" onerror="this.src='./images/hs-fallback.png'">
-          {{/Collection}}
-        </article>
-      {{/Druid}}
-
-      {{#Hunter}}
-        <article class="collection-overview__card">
-          <h2 class="collection-overview__card__class-name">{{ClassName}}</h2>
-          {{#Collection}}
-            <img class="collection-overview__card__img" src="{{img}}" alt="{{name}}" onerror="this.src='./images/hs-fallback.png'">
-          {{/Collection}}
-        </article>
-      {{/Hunter}}
-
-      {{#Mage}}
-        <article class="collection-overview__card">
-          <h2 class="collection-overview__card__class-name">{{ClassName}}</h2>
-          {{#Collection}}
-            <img class="collection-overview__card__img" src="{{img}}" alt="{{name}}" onerror="this.src='./images/hs-fallback.png'">
-          {{/Collection}}
-        </article>
-      {{/Mage}}
-
-      {{#Paladin}}
-        <article class="collection-overview__card">
-          <h2 class="collection-overview__card__class-name">{{ClassName}}</h2>
-          {{#Collection}}
-            <img class="collection-overview__card__img" src="{{img}}" alt="{{name}}" onerror="this.src='./images/hs-fallback.png'">
-          {{/Collection}}
-        </article>
-      {{/Paladin}}
-
-      {{#Priest}}
-        <article class="collection-overview__card">
-          <h2 class="collection-overview__card__class-name">{{ClassName}}</h2>
-          {{#Collection}}
-            <img class="collection-overview__card__img" src="{{img}}" alt="{{name}}" onerror="this.src='./images/hs-fallback.png'">
-          {{/Collection}}
-        </article>
-      {{/Priest}}
-
-      {{#Rogue}}
-        <article class="collection-overview__card">
-          <h2 class="collection-overview__card__class-name">{{ClassName}}</h2>
-          {{#Collection}}
-            <img class="collection-overview__card__img" src="{{img}}" alt="{{name}}" onerror="this.src='./images/hs-fallback.png'">
-          {{/Collection}}
-        </article>
-      {{/Rogue}}
-
-      {{#Shaman}}
-        <article class="collection-overview__card">
-          <h2 class="collection-overview__card__class-name">{{ClassName}}</h2>
-          {{#Collection}}
-            <img class="collection-overview__card__img" src="{{img}}" alt="{{name}}" onerror="this.src='./images/hs-fallback.png'">
-          {{/Collection}}
-        </article>
-      {{/Shaman}}
-
-      {{#Warlock}}
-        <article class="collection-overview__card">
-          <h2 class="collection-overview__card__class-name">{{ClassName}}</h2>
-          {{#Collection}}
-            <img class="collection-overview__card__img" src="{{img}}" alt="{{name}}" onerror="this.src='./images/hs-fallback.png'">
-          {{/Collection}}
-        </article>
-      {{/Warlock}}
-
-      {{#Warrior}}
-        <article class="collection-overview__card">
-          <h2 class="collection-overview__card__class-name">{{ClassName}}</h2>
-          {{#Collection}}
-            <img class="collection-overview__card__img" src="{{img}}" alt="{{name}}" onerror="this.src='./images/hs-fallback.png'">
-          {{/Collection}}
-        </article>
-      {{/Warrior}}
-
-      {{#Neutral}}
-        <article class="collection-overview__card">
-          <h2 class="collection-overview__card__class-name">{{ClassName}}</h2>
-          {{#Collection}}
-            <img class="collection-overview__card__img" src="{{img}}" alt="{{name}}" onerror="this.src='./images/hs-fallback.png'">
-          {{/Collection}}
-        </article>
-      {{/Neutral}}
-
-    {{/Set}}
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
 
@@ -122,6 +32,6 @@
   <script src="./js/vendor/routie.js"></script>
 
   <!-- App init -->
-  <script type="module" src="js/app.js"></script>
+  <script type="module" src="./js/app.js"></script>
 </body>
 </html>
