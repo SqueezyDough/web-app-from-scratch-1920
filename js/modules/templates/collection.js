@@ -1,6 +1,13 @@
 export const layout = `
+<header>
+  <h1>Hearthstone <span>Evergreen</span></h1>
+</header>
+
 <ul class="class-list">
 {{#Set}}
+  {{#Demon Hunter}}
+    <li><a href="#{{ClassName}}">{{ClassName}}</a></li>
+  {{/Demon Hunter}}
   {{#Druid}}
    <li><a href="#{{ClassName}}">{{ClassName}}</a></li>
   {{/Druid}}
@@ -35,6 +42,16 @@ export const layout = `
 </ul>
 
 {{#Set}}
+{{#Demon Hunter}}
+  <article id="{{ClassName}}" class="collection-overview__card">
+    <h2 class="collection-overview__card__class-name">{{ClassName}}</h2>
+    {{#Collection}}
+      <a href="#{{cardId}}">
+        <img src="https://art.hearthstonejson.com/v1/render/latest/enUS/512x/{{cardId}}.png" alt="{{name}}" onerror="this.src='./images/hs-fallback.png'">
+      </a>  
+    {{/Collection}}
+  </article>
+{{/Demon Hunter}}
 {{#Druid}}
   <article id="{{ClassName}}" class="collection-overview__card">
     <h2 class="collection-overview__card__class-name">{{ClassName}}</h2>

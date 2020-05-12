@@ -10,12 +10,8 @@ const checkStatus = response => {
 }
 
 // TODO: create dynamic headers
-async function FetchData(url, id) {
-    // change url to look for specific card
-    if (id) {
-        url + `/cards/${id}`
-    }
-
+async function FetchData(url) {
+    console.log('fetch...')
     return fetch(url, {
         headers: {
             'x-rapidapi-host' : 'omgvamp-hearthstone-v1.p.rapidapi.com',
@@ -31,6 +27,3 @@ async function FetchData(url, id) {
 }
 
 export { FetchData };
-
-// fetch, clean, store, render, catch err
-// check if collection is in store
