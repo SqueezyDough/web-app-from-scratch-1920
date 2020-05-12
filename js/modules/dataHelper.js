@@ -43,6 +43,7 @@ function sortByManaCost(data) {
 }
 
 // sort by class
+// taken and modified from MDN
 function sortByClass(data, property) {
     return data.reduce((acc, obj) => {
         // property value
