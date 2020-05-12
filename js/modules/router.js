@@ -22,7 +22,6 @@ function handleRoutes() {
                 FetchData(url)
                     .then(data => dataHelper.cleanData(data))
                     .then(data => store.storeData(data))
-                    // .then(data => console.log(data))
                     .then(data => render.renderTemplate(overviewTemplate.layout, data))
                     .then(() => loader.stop())
             }   
@@ -32,6 +31,10 @@ function handleRoutes() {
             const classes = utils.getAllClassesFromCollection(localStorageData)
             const cards = utils.getCardsFromCollection(classes)
             const requestedCard = utils.getCardById(cards, id)
+
+            // example so I can show off a map function
+            const usingZeroCostCardsIsCheating = utils.doSomethingPrettyWithMap(cards)
+            console.log('crappified 0-cost cards', usingZeroCostCardsIsCheating)
 
             render.renderTemplate(detailsTemplate.layout, requestedCard, id)
         }

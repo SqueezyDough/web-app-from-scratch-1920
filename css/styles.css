@@ -11,8 +11,15 @@
   src: url("../fonts/Roboto-Bold.ttf");
 }
 
+@font-face {
+  font-family: "Roboto-light";
+  src: url("../fonts/Roboto-Light.ttf");
+}
+
 body {
   margin: 0;
+  width: 100%;
+  overflow-x: hidden;
   background-color: var(--background);
   font-family: var(--mainFontFamily);
 }
@@ -184,7 +191,10 @@ img:hover {
 
 .card-details hgroup {
   text-align: center;
-  margin: 0 6rem;
+  margin: 0 auto;
+  max-width: 50rem;
+  font-family: 'Roboto-light', sans-serif;
+  line-height: 3rem;
 }
 
 .card-details hgroup h2 {
@@ -193,7 +203,7 @@ img:hover {
 
 .card-details hgroup h3 {
   text-transform: unset;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--background)
 }
 
@@ -207,6 +217,10 @@ img:hover {
   padding: 1rem 2rem 6rem;
   border-top: 1px solid var(--background);
   text-align: center;
+}
+
+.mistake {
+  margin-top: 8rem;
 }
 
 dt {
