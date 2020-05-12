@@ -70,6 +70,37 @@ img:hover {
   transform: scale(1.2);
 }
 
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+}
+
+.loader img {
+  width: 42%;
+  border-radius: 1rem;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loader img:hover {
+  transform: unset;
+}
+
 .wrapper {
   padding-top: 4rem;
   max-width: 60rem;

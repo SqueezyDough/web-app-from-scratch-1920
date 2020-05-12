@@ -1,8 +1,4 @@
 export const layout = `
-<header>
-  <h1>Hearthstone <span>Evergreen</span></h1>
-</header>
-
 <ul class="class-list">
 {{#Set}}
   {{#Demon Hunter}}

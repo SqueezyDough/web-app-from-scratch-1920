@@ -1,7 +1,7 @@
 
 export function storeData(data) {
-    const collection = getLocalStorageItems() ? getLocalStorageItems() : setLocalStorage(data)
-    return JSON.parse(collection)
+    getLocalStorageItems() ? getLocalStorageItems() : setLocalStorage(data)
+    return JSON.parse(getLocalStorageItems())
 }
 
 export function getLocalStorageItems() {
