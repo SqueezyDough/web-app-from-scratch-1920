@@ -1,5 +1,4 @@
 export function getAllClassesFromCollection(data) {
-    console.log(data)
     return Object.values(data.Set)
 }
 

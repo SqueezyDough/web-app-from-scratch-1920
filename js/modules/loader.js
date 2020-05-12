@@ -6,6 +6,4 @@ export function start() {
 export function stop() {
     const loader = document.querySelector('.loader');
     loader.classList.add('is-hidden')
-
-    console.log('stop')
 }

@@ -17,8 +17,6 @@ function renderCard(template, card, id) {
         const insertContainer = document.querySelector('.details-overview');
         insertContainer.insertAdjacentHTML('beforeend', Mustache.to_html(template, card));
     
-        console.log(insertContainer)
-    
         toggleViews(id);
     }
 }

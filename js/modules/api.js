@@ -11,7 +11,6 @@ const checkStatus = response => {
 
 // TODO: create dynamic headers
 async function FetchData(url) {
-    console.log('fetch...')
     return fetch(url, {
         headers: {
             'x-rapidapi-host' : 'omgvamp-hearthstone-v1.p.rapidapi.com',
