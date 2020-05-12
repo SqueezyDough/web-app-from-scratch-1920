@@ -10,33 +10,26 @@ function renderCollection(template, data) {
 }
 
 function renderCard(template, card, id) {
-    const insertContainer = document.querySelector('.details-overview');
-    insertContainer.insertAdjacentHTML('beforeend', Mustache.to_html(template, card));
+    const classNames = ['Mage', 'Druid', 'Shaman','Demon Hunter', 'Paladin', 'Hunter', 'Priest', 'Warlock', 'Warrior', 'Rogue', 'Neutral']
 
-    console.log(insertContainer)
-
-    toggleViews(id);
+    // do nothing is a class is targeted as id
+    if (!classNames.includes(id)) {
+        const insertContainer = document.querySelector('.details-overview');
+        insertContainer.insertAdjacentHTML('beforeend', Mustache.to_html(template, card));
+    
+        console.log(insertContainer)
+    
+        toggleViews(id);
+    }
 }
 
 function toggleViews(id) {
-    console.log(id);
-
     const activeId = document.getElementById(id);
-    const detailsWindows = document.querySelectorAll('.details-overview');
     const collection = document.querySelector('.collection-overview');
-
-    
-
-    // hide all windows
-    // detailsWindows.forEach(details => {
-    //     details.classList.add('is-hidden')
-    // })
 
     // remove is-hidden class from active window
     activeId.classList.remove('is-hidden')
 
     // hide collection overview
     collection.classList.add('is-hidden');
-
-    console.log(activeId)
 }
