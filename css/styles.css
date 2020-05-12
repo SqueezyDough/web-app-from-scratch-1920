@@ -189,6 +189,8 @@ dd {
 }
 
 .return-link {
+  position: absolute;
+  top: 16rem;
   display: inline-block;
   padding: 1rem;
   width: 4rem;

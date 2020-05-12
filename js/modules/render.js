@@ -27,6 +27,8 @@ function toggleViews(id) {
     const activeId = document.getElementById(id);
     const collection = document.querySelector('.collection-overview');
 
+    window.scrollTo(0, 0);
+
     // remove is-hidden class from active window
     activeId.classList.remove('is-hidden')
 
