@@ -90,7 +90,7 @@ img:hover {
 }
 
 .loader img {
-  width: 42%;
+  width: 36%;
   border-radius: 1rem;
   animation: pulse 3s infinite;
 }
