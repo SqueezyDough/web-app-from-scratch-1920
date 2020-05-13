@@ -176,6 +176,7 @@ Open index.html
 - [Hearthstone API](https://rapidapi.com/omgvamp/api/hearthstone)
 - [API checkstatus function](https://codeburst.io/fetch-api-was-bringing-darkness-to-my-codebase-so-i-did-something-to-illuminate-it-7f2d8826e939)
 - [Hearthstone loading animation](https://dribbble.com/shots/5289768-Hearthstone-Loader-Animation)
+- [MDN reduce example to group on property name](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 
 ## License
 SqueezyDough @ [MIT](https://opensource.org/licenses/MIT)
