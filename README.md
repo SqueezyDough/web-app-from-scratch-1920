@@ -1,12 +1,10 @@
 <!-- Add a link to your live demo in Github Pages 🌐-->
+# Hearthstone Evergreen
+
+
 
 ## Description
-This app is a web app that works as a Hearthstone card explorer.
-<!-- ☝️ replace this description with a description of your own work -->
-
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
-<!-- Maybe a table of contents here? 📚 -->
+Hearthstone Evergreen is a single page web app using client-side routing to create a overview/details interface. The app makes use of a community created Hearthstone API. This web app shows all cards that are in the s-called evergreen set. This set will always be playable in the Standard game mode while other (newer) card sets rotate out after 1 or 2 years. The user can click on any card to see the card details.
 
 ## Install
 Clone repository
