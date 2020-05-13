@@ -2,11 +2,6 @@
 import { FetchData } from './api.js';
 import dataHelper from './dataHelper.js'
 
-export async function storeData(data) {
-    getLocalStorageItems() ? await getLocalStorageItems() : setLocalStorage(data)
-    return getLocalStorageItems()
-}
-
 export function getLocalStorageItems() {
     const storage = JSON.parse(localStorage.getItem('collection'))
 
