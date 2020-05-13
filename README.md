@@ -54,6 +54,13 @@ When the user visits the site for the first time all cards are fetched from the 
 
 ------
 
+## Actor Diagram
+
+------
+
+## Interaction diagram
+
+------
 ## API
 I've used the unofficial [Hearthstone API](https://rapidapi.com/omgvamp/api/hearthstone) from [RapdAPI](https://rapidapi.com/). The APi does require an API key. Because I don't use node in this app I haven't tried to hide it from github. Something I normally would have done.
 
