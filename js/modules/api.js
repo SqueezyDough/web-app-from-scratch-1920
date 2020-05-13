@@ -10,7 +10,9 @@ const checkStatus = response => {
 }
 
 // TODO: create dynamic headers
-async function FetchData(url) {
+async function FetchData() {
+    const url = 'https://omgvamp-hearthstone-v1.p.rapidapi.com/cards';
+
     return fetch(url, {
         headers: {
             'x-rapidapi-host' : 'omgvamp-hearthstone-v1.p.rapidapi.com',

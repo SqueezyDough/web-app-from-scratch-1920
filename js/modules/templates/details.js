@@ -1,8 +1,6 @@
 export const layout = `
 <article id="{{cardId}}" class="card-details">
-   
     {{#name}}
-
         <h1>{{name}}</h1>
         <img src="https://art.hearthstonejson.com/v1/render/latest/enUS/512x/{{cardId}}.png" alt="{{name}}" onerror="this.src='./images/hs-fallback.png'">
         
