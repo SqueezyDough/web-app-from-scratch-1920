@@ -45,6 +45,8 @@ When the user visits the site for the first time all cards are fetched from the 
 ## API
 I've used the unofficial [Hearthstone API](https://rapidapi.com/omgvamp/api/hearthstone) from [RapdAPI](https://rapidapi.com/)
 
+
+
 ------
 
 ## Install
