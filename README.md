@@ -40,7 +40,7 @@ When the user visits the site for the first time all cards are fetched from the 
 
 ------
 
-## Feautures
+## Features
 - Loading data using the Hearthstone API
 - Show a loading indicator while loading
 - View all cards from the Evergreen set, sorted by class and mana cost
