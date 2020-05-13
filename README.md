@@ -78,7 +78,7 @@ The API gives me lots of data and it does take a few seconds before I have all o
 Usually I use express handlebars when I'm building with SSR. Because this app is stricly client-side it made sense to also use a mutache based template engine. I ended up with a recommendation from Stefan Gerrits which has also used this template engine. Even though they are both based on the same library, it took some time to adjust to the new template engine. because there were some notable differences.
 
 ### Looping through data
-I had to name the object explicitly to show the classname of Hunter
+I had to name the object explicitly to show the class name of Hunter.
 ```
 {{#Set}}
   {{#Hunter}}
@@ -98,6 +98,12 @@ You can do something else by prefixing a `^` character. In express handlebars yo
 {{^name}} 
   <!-- Do something else -->
 {{/name}}
+```
+### Inserting data
+With this template engine you'll have to manually select the container in which your content should be inserted. Then, with the `Mustache.to_html()` method, mustache inserts the data requiering a template and the data that is used for the template.
+```
+const insertContainer = document.querySelector('.collection-overview');
+insertContainer.insertAdjacentHTML('beforeend', Mustache.to_html(template, data));
 ```
 
 ## Install
