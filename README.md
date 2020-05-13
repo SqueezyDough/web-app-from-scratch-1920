@@ -1,6 +1,6 @@
 
 # Hearthstone Evergreen
-In this course I will create client-side a web app using a template engine and a routing micro-libraries.
+In this course I will create client-side a web app using a template engine and a routing micro-library.
 
 ### Learning goals
 > - You can add structure to your code by applying patterns. You can defend the choice for the chosen patterns
