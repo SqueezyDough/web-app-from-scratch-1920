@@ -121,6 +121,8 @@ insertContainer.insertAdjacentHTML('beforeend', Mustache.to_html(template, data)
 ```
 
 ## Cleaning data with map, filter, reduce
+I've included some functions where I use map, filter and reduce to clean the data
+
 ### Map
 I often use filter instead of map, because I often want to filter the data instead of manipulating it. I decided to write a map function that doesn't do anmything usefull in the app, but does explain what a map function can do.
 
@@ -149,6 +151,7 @@ function getCollectables(data) {
 ```
 
 ### Reduce
+This function starts with an empty array and puts all class cards in the array from all classes
 ```
 // goes one level deeper than a usual flat()
 function getCardsFromCollection(classes) {
