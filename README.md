@@ -55,10 +55,12 @@ When the user visits the site for the first time all cards are fetched from the 
 ------
 
 ## Actor Diagram
+![actor-diagram (1)](https://user-images.githubusercontent.com/33430653/81862505-1d5e1b00-956a-11ea-9640-232b0e69a09d.png)
 
 ------
 
 ## Interaction diagram
+![int-diagram (1)](https://user-images.githubusercontent.com/33430653/81862504-1cc58480-956a-11ea-95f9-f075b4465cac.png)
 
 ------
 ## API
