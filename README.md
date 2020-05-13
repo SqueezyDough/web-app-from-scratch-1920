@@ -26,13 +26,13 @@ Hearthstone Evergreen is a single page web app using client-side routing to crea
 <details>
 <summary> See states </summary>
   
-### Error page
+### Error state
 When the user enters an ID that does not exist the website shows an error page
 ![60d4dd47e4560e61f48efdc7f0face04](https://user-images.githubusercontent.com/33430653/81810398-2aa3e700-9523-11ea-878c-d108b8340eb3.png)
 
 ------
   
-### Loader
+### Loading state
 When the user visits the site for the first time all cards are fetched from the API and stored in the LocalStorage.
 ![abebd0d684c50869620b672594b38e4a](https://user-images.githubusercontent.com/33430653/81810500-5626d180-9523-11ea-8444-d4e25ed6cff4.png)
 
