@@ -43,7 +43,29 @@ When the user visits the site for the first time all cards are fetched from the 
 ------
 
 ## API
-I've used the unofficial [Hearthstone API](https://rapidapi.com/omgvamp/api/hearthstone) from [RapdAPI](https://rapidapi.com/)
+I've used the unofficial [Hearthstone API](https://rapidapi.com/omgvamp/api/hearthstone) from [RapdAPI](https://rapidapi.com/). The APi does require an API key. Because I don't use node in this app I haven't tried to hide it from github. Something I normally would have done.
+
+The API gives me lots of data and it does take a few seconds before I have all of it.
+
+<details>
+  <summary> See data properties </summary>
+  
+
+  ### Fetching card sets
+  The API gives me a lot of irrelevant card sets. For example, Battlegrounds is a set from a entirely different game mode and I don't even know what Wild event is. For the vergreen set only the Classic and Basic sets are relevant. 
+  
+  ![b59c54301d9ea4dba513b90d7984861a](https://user-images.githubusercontent.com/33430653/81812384-570d3280-9526-11ea-824f-c323ac42dbef.png)
+
+  ------
+  
+  ### Cleaning the data
+  Within a card set, the data is also very dirty. It includes non-collectable objects. In hearthstone every object is a card. but in-game there are bif differences. For example a hero is also a card, even though in-game its just a playable hero skin. There are more assets in this API that is not a card but something else. I had to do a lot of data cleaning to just get the collectable cards. An example of an ectual real card can be found below.
+
+  ![c889f8c60248ae98269fc28590885011 (1)](https://user-images.githubusercontent.com/33430653/81812389-583e5f80-9526-11ea-80bb-347aa581d5ca.png)
+  
+  
+  
+</details>
 
 
 
