@@ -14,8 +14,6 @@ function handleRoutes() {
             loader.start()
             const localStorageData = await store.getLocalStorageItems()
 
-            console.log(localStorageData)
-
             if (localStorageData !== null) {          
                 render.renderTemplate(overviewTemplate.layout, localStorageData)
             } else {               
