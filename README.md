@@ -120,6 +120,48 @@ const insertContainer = document.querySelector('.collection-overview');
 insertContainer.insertAdjacentHTML('beforeend', Mustache.to_html(template, data));
 ```
 
+## Cleaning data with map, filter, reduce
+### Map
+I often use filter instead of map, because I often want to filter the data instead of manipulating it. I decided to write a map function that doesn't do anmything usefull in the app, but does explain what a map function can do.
+
+This function changes all card names that costs 0 mana to 'useless crap'.
+```
+// changes the card name to 'useless crap' is a card costs 0
+function doSomethingPrettyWithMap(cards) {
+    return cards.map(card => {
+        if (card.cost === 0) {
+            card.name = 'useless crap!';
+        }
+
+        return card;
+    })
+}
+```
+
+### Filter
+This simple filter function filters out all non-collectible cards.
+```
+// get all collectable cards
+function getCollectables(data) {
+    return data.filter(card => card.collectible)
+}
+
+```
+
+### Reduce
+```
+// goes one level deeper than a usual flat()
+function getCardsFromCollection(classes) {
+    return classes.reduce( (accumulator, currentValue) => {
+        const classCards = currentValue[0].Collection
+        return accumulator.concat(classCards)
+    }, []
+    ) 
+}
+```
+
+------
+
 ## Install
 Clone repository
 ```
