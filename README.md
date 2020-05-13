@@ -55,7 +55,7 @@ I've used the unofficial [Hearthstone API](https://rapidapi.com/omgvamp/api/hear
 The API gives me lots of data and it does take a few seconds before I have all of it.
 
 <details>
-  <summary> See data properties </summary>
+  <summary> See properties </summary>
   
 
   ### Fetching card sets
@@ -70,13 +70,35 @@ The API gives me lots of data and it does take a few seconds before I have all o
 
   ![c889f8c60248ae98269fc28590885011 (1)](https://user-images.githubusercontent.com/33430653/81812389-583e5f80-9526-11ea-80bb-347aa581d5ca.png)
   
-  
-  
 </details>
 
-
-
 ------
+
+## Template engine
+Usually I use express handlebars when I'm building with SSR. Because this app is stricly client-side it made sense to also use a mutache based template engine. I ended up with a recommendation from Stefan Gerrits which has also used this template engine. Even though they are both based on the same library, it took some time to adjust to the new template engine. because there were some notable differences.
+
+### Looping through data
+I had to name the object explicitly to show the classname of Hunter
+```
+{{#Set}}
+  {{#Hunter}}
+     <li><a href="#{{ClassName}}">{{ClassName}}</a></li>
+  {{/Hunter}}
+  
+  ... other classes
+{{/Set}}
+```
+
+### if / else statements
+You can do something else by prefixing a `^` character. In express handlebars you can just type `{{#if}}` `{{else}}`
+```
+{{#name}}
+  <!-- Show the card -->
+{{/name}}
+{{^name}} 
+  <!-- Do something else -->
+{{/name}}
+```
 
 ## Install
 Clone repository
