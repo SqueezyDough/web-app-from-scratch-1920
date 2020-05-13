@@ -1,5 +1,12 @@
-<!-- Add a link to your live demo in Github Pages 🌐-->
+
 # Hearthstone Evergreen
+In this course I will create client-side a web app using a template engine and a routing micro-libraries.
+
+### Learning goals
+> - You can add structure to your code by applying patterns. You can defend the choice for the chosen patterns
+> - You can retrieve data, manipulate it and dynamically convert it to html elements using templating
+> - You understand how you can work with an external API using asynchronous code
+> - You understand how you can manage state in your application and you inform the user of state where necessary
 
 ## Description
 Hearthstone Evergreen is a single page web app using client-side routing to create a overview/details interface. The app makes use of a community created Hearthstone API. This web app shows all cards that are in the s-called evergreen set. This set will always be playable in the Standard game mode while other (newer) card sets rotate out after 1 or 2 years. The user can click on any card to see the card details.
